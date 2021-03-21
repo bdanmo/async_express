@@ -78,7 +78,7 @@ function getUsers() {
 
 app.get('/', asyncHandler(async (req, res) => {
   const users = await getUsers();
-  res.render('index', {title: 'Users', users})
+  res.render('index', { title: 'Users', users });
 }));
 
 app.listen(3000, () => console.log('App listening on port 3000!'));
